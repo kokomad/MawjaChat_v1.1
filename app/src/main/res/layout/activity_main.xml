@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingStart="28dp"
+            android:paddingTop="48dp"
+            android:paddingEnd="28dp"
+            android:paddingBottom="32dp">
+
+            <ImageView
+                android:layout_width="124dp"
+                android:layout_height="124dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_mawja_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="موجة شات"
+                android:textColor="@color/text_primary"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MawjaChat"
+                android:textColor="@color/accent_cyan"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="تواصل صوتي مشفّر عبر ترجمة الموجات الدقيقة للحروف والكلمات والسكون والفراغ"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/etSenderName"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_neon_orange"
+                android:hint="اسم المرسل (أحمد)"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:maxLength="24"
+                android:maxLines="1"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/hint_orange"
+                android:textSize="16sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/etReceiverName"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_neon_orange"
+                android:hint="اسم المستقبل (سارة)"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:maxLength="24"
+                android:maxLines="1"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/hint_orange"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etSharedCode"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_neon_orange"
+                android:hint="الكود المشترك السري (7492-موجة)"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/hint_orange"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btnConnectRoom"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/bg_btn_teal"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="بدء الاتصال الخاص"
+                android:textColor="@color/text_primary"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_gravity="top|right"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_corner_curl" />
+
+    <ImageView
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_gravity="bottom|left"
+        android:importantForAccessibility="no"
+        android:rotation="180"
+        android:src="@drawable/ic_corner_curl" />
+
+    <ImageButton
+        android:id="@+id/btnSettings"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_gravity="top|left"
+        android:layout_margin="14dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="الإعدادات"
+        android:src="@drawable/ic_gear"
+        app:tint="@color/accent_cyan" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+{
+  "name": "mawjachat-relay",
+  "version": "1.1.0",
+  "description": "MawjaChat WebSocket relay: rooms, presence passthrough and unique name registry",
+  "main": "relay.js",
+  "scripts": { "start": "node relay.js" },
+  "dependencies": { "ws": "^8.17.0" },
+  "engines": { "node": ">=18" }
+}
